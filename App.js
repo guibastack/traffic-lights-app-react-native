@@ -16,13 +16,32 @@ export default () => {
 
     <NavigationContainer>
 
-      <Stack.Navigator initialRouteName="SettingsScreen">
-        <Stack.Screen name="EmailScreen" component={EmailScreen}></Stack.Screen>
-        <Stack.Screen name="AuthTokenScreen" component={AuthTokenScreen}></Stack.Screen>
-        <Stack.Screen name="ChangeNameScreen" component={ChangeNameScreen}></Stack.Screen>
-        <Stack.Screen name="NearbyTrafficLightsScreen" component={NearbyTrafficLightsScreen}></Stack.Screen>
-        <Stack.Screen name="MapTrafficLightsScreen" component={MapTrafficLightsScreen}></Stack.Screen>
-        <Stack.Screen name="SettingsScreen" component={SettingsScreen}></Stack.Screen>
+      <Stack.Navigator initialRouteName="EmailScreen">
+
+        <Stack.Screen name="EmailScreen" component={EmailScreen} options={{
+          title: 'Sign In',
+        }}></Stack.Screen>
+        
+        <Stack.Screen name="AuthTokenScreen" component={AuthTokenScreen} options={{
+          title: 'Sign In',
+        }}></Stack.Screen>
+        
+        <Stack.Screen name="ChangeNameScreen" component={ChangeNameScreen} options={{
+          title: 'Your name'
+        }}></Stack.Screen>
+
+        <Stack.Screen name="NearbyTrafficLightsScreen" component={NearbyTrafficLightsScreen} options={{
+          title: 'Nearby'
+        }}></Stack.Screen>
+
+        <Stack.Screen name="MapTrafficLightsScreen" component={MapTrafficLightsScreen} options={{
+          title: 'Map'
+        }}></Stack.Screen>
+
+        <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{
+          title: 'Settings'
+        }}></Stack.Screen>
+
       </Stack.Navigator>
 
     </NavigationContainer>
