@@ -1,20 +1,51 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import EmailScreen from './src/Screens/EmailScreen';
+import AuthTokenScreen from './src/Screens/AuthTokenScreen';
+import ChangeNameScreen from './src/Screens/ChangeNameScreen';
+import NearbyTrafficLightsScreen from './src/Screens/NearbyTrafficLightsScreen';
+import MapTrafficLightsScreen from './src/Screens/MapTrafficLightsScreen';
+import SettingsScreen from './src/Screens/SettingsScreen';
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+export default () => {
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    <NavigationContainer>
+
+      <Stack.Navigator initialRouteName="EmailScreen">
+
+        <Stack.Screen name="EmailScreen" component={EmailScreen} options={{
+          title: 'Sign In',
+        }}></Stack.Screen>
+        
+        <Stack.Screen name="AuthTokenScreen" component={AuthTokenScreen} options={{
+          title: 'Sign In',
+        }}></Stack.Screen>
+        
+        <Stack.Screen name="ChangeNameScreen" component={ChangeNameScreen} options={{
+          title: 'Your name'
+        }}></Stack.Screen>
+
+        <Stack.Screen name="NearbyTrafficLightsScreen" component={NearbyTrafficLightsScreen} options={{
+          title: 'Nearby'
+        }}></Stack.Screen>
+
+        <Stack.Screen name="MapTrafficLightsScreen" component={MapTrafficLightsScreen} options={{
+          title: 'Map'
+        }}></Stack.Screen>
+
+        <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{
+          title: 'Settings'
+        }}></Stack.Screen>
+
+      </Stack.Navigator>
+
+    </NavigationContainer>
+
+  );
+
+}
