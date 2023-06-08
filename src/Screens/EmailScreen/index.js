@@ -10,14 +10,19 @@ export default () => {
 
         <View style={[Styles.styles.appContainer]}>
 
-            <InputLabel 
-                label="Enter your email address"
-                placeholder="example@example.com"
-            />
+            <View style={[Styles.styles.MB8]}>
+                <InputLabel
+                    label="Enter your email address"
+                    placeholder="example@example.com"
+                    inputMode="email"
+                />
+            </View>
 
-            <ButtonLabel
-                label="Ok"
-            />
+            <View>
+                <ButtonLabel
+                    label="Ok"
+                />
+            </View>
 
         </View>
 
