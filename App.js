@@ -7,6 +7,7 @@ import ChangeNameScreen from './src/Screens/ChangeNameScreen';
 import NearbyTrafficLightsScreen from './src/Screens/NearbyTrafficLightsScreen';
 import MapTrafficLightsScreen from './src/Screens/MapTrafficLightsScreen';
 import SettingsScreen from './src/Screens/SettingsScreen';
+import * as Styles from './src/Styles/Styles';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,11 +18,8 @@ export default () => {
     <NavigationContainer>
 
       <Stack.Navigator initialRouteName="EmailScreen" screenOptions={{
-        headerTitleStyle: {
-          fontWeight: 'bold',
-          fontSize: 17,
-        },
-        headerShadowVisible: false,
+        headerTitleStyle: Styles.headerTitleStyle,
+        headerShadowVisible: Styles.headerShadowVisible,
       }}>
 
         <Stack.Screen name="EmailScreen" component={EmailScreen} options={{
