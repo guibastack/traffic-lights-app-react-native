@@ -16,7 +16,13 @@ export default () => {
 
     <NavigationContainer>
 
-      <Stack.Navigator initialRouteName="EmailScreen">
+      <Stack.Navigator initialRouteName="EmailScreen" screenOptions={{
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 17,
+        },
+        headerShadowVisible: false,
+      }}>
 
         <Stack.Screen name="EmailScreen" component={EmailScreen} options={{
           title: 'Sign In',
