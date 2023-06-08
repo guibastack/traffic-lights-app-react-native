@@ -10,7 +10,7 @@ export default ({label, placeholder}) => {
             
             <Text style={[Styles.styles.inputLabelContainer]}>{label}</Text>
 
-            <View style={[Styles.styles.MB8]}>
+            <View>
                 <TextInput 
                     style={[Styles.styles.inputLabelLabel]}
                     placeholder={placeholder}
