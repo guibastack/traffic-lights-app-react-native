@@ -59,6 +59,87 @@ export const styles = StyleSheet.create({
 
         marginBottom: 8,
 
+    },
+
+    containerMark: {
+
+        backgroundColor: 'rgb(50, 50, 50)',
+        padding: 18,
+        borderRadius: 20,
+
+    },
+
+    MB15: {
+
+        marginBottom: 15,
+
+    },
+
+    MB25: {
+
+        marginBottom: 25,
+
+    },
+
+    lightMark: {
+
+        width: 120,
+        height: 120,
+        borderRadius: 100,
+        borderWidth: 8,
+        backgroundColor: 'rgb(100, 100, 100)',
+
+    },
+
+    horizontallyCentered: {
+
+        alignItems: 'center',
+        
+    },
+
+    title: {
+
+        fontSize: 18,
+        textAlign: 'center',
+
+    },
+
+    textIndicatorIndicator: {
+
+        fontWeight: 'bold',
+        fontSize: 16,
+
+    },
+
+    textIndicatorValue: {
+
+        fontSize: 16,
+        color: '#FF0000',
+
+    },
+
+    MB30: {
+
+        marginBottom: 30,
+
+    },
+
+    redLight: {
+
+        backgroundColor: '#FF0000',
+
+    },
+
+    yellowLight: {
+
+        backgroundColor: '#FFAA00',
+
+    },
+
+    greenLight: {
+
+        backgroundColor: '#00FF00',
+
     }
 
 });
