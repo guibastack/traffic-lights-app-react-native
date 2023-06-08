@@ -19,15 +19,15 @@ export default () => {
       <Stack.Navigator initialRouteName="EmailScreen">
 
         <Stack.Screen name="EmailScreen" component={EmailScreen} options={{
-          title: 'Sign In',
+          title: 'Email',
         }}></Stack.Screen>
         
         <Stack.Screen name="AuthTokenScreen" component={AuthTokenScreen} options={{
-          title: 'Sign In',
+          title: 'Token',
         }}></Stack.Screen>
         
         <Stack.Screen name="ChangeNameScreen" component={ChangeNameScreen} options={{
-          title: 'Your name'
+          title: 'Name'
         }}></Stack.Screen>
 
         <Stack.Screen name="NearbyTrafficLightsScreen" component={NearbyTrafficLightsScreen} options={{
