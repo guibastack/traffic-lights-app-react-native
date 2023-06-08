@@ -8,8 +8,12 @@ export const headerTitleStyle = {
 
 export const headerShadowVisible = false;
 
-export default StyleSheet.create({
+export const styles = StyleSheet.create({
 
-
+    appContainer: {
+        backgroundColor: '#FFFFFF',
+        padding: 16,
+        flex: 1,
+    },
 
 });
